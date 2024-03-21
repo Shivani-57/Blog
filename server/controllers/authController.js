@@ -4,10 +4,17 @@ import { errorHandler } from '../utils/errorHandler.js';
 export const authController = async (req, res, next) => {
     console.log(req.body);
     const { username, email, password } = req.body;
-
+try{
     if (!username || !email || !password || username === "" || password === "" || email === "") {
-       next(errorHandler(400,"All fields are required"))
+        console.log("Invalid username or email")
+        console.log("In auth",errorHandler(400,"All fields are required"))
+       return next(errorHandler(400,"All fields are required"))
     }
+}
+catch(err){
+    console.log(err);
+}
+
 
     const hashedPassword = bcrypt.hashSync(password, 10);
     const newUser = User({ username, email, password: hashedPassword })
