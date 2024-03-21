@@ -43,7 +43,7 @@ function Signup() {
     }
     console.log(error)
   return (
-    <div className='min-h-screen border-4 border-blue-500'> 
+    <div className='min-h-screen '> 
       <div className=' flex flex-col md:flex-row p-3 mt-20 max-w-3xl mx-auto md:items-center gap-6'>
         {/* Left div */}
         <div className=' flex-1'>
@@ -82,7 +82,7 @@ function Signup() {
          </div>
          {
           error && (
-            <Alert>{error}</Alert>
+            <Alert color='failure'>{error}</Alert>
           )
          }
         </div>
