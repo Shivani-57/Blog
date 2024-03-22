@@ -6,6 +6,7 @@ import Projects from "./pages/Projects"
 import About from "./pages/About"
 import Dashboard from "./pages/Dashboard"
 import Header from "./components/Header";
+import Footers from "./components/Footers";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/dashboard" element={<Dashboard />} />
 
       </Routes>
+      <Footers />
     </BrowserRouter>
   );
 }
