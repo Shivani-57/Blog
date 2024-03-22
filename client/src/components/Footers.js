@@ -9,16 +9,16 @@ function Footers() {
         <div className=''>
             <Footer >
                 <div className=' border-t-8  border-t-teal-400 flex flex-col w-full mb-10 gap-1'>
-                    <div className=' border-2 border-black flex flex-col md:flex-row justify-between  mx-28'>
+                    <div className='flex flex-col md:flex-row justify-between  mx-28'>
                         {/* left */}
-                        <div className='border-2 border-blue-500 flex justify-items-start mt-4'>
+                        <div className='flex justify-items-start mt-5'>
                             <Link to="/" className=' whitespace-nowrap text-sm sm:text-2xl font-semibold dark:text-white'>
                                 <span className='px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg'>Shivani's</span>
                                 Blog
                             </Link>
                         </div>
                         {/* right */}
-                        <div className='border-2 border-red-500 flex flex-col gap-4 sm:flex-row sm:gap-14 mt-10 pl-8 ' >
+                        <div className='flex flex-col gap-4 sm:flex-row sm:gap-14 mt-10 pl-8 ' >
                             <div >
                                 <Footer.Title title='About' className='font-semibold'/>
                                 <Footer.LinkGroup col >
